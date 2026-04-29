@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap');
+
+:root {
+    --site-navy: #0f172a;
+    --site-blue: #2563eb;
+    --site-border: #dbe4f0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+}
+
+.site-header {
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.site-nav a {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 48%, #0ea5e9 100%);
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.45;
+}
+
+.hero-overlay {
+    background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
+        url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1600');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-heading {
+    color: var(--site-navy);
+}
+
+.section-kicker {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--site-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card-surface {
+    border: 1px solid var(--site-border);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.footer-links a {
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
